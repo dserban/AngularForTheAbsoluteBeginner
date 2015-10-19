@@ -18,10 +18,7 @@ app.controller('SecretSantaNameDrawingController', ['$scope', function($scope) {
 /*
   function generateSecretSantaHash(commaSeparatedListOfNames) {
     var resultOfSplittingByComma = commaSeparatedListOfNames.split(',');
-    function trimAsFirstClassFunction(element) {
-      return element.trim();
-    }
-    var resultOfTrimmingWhitespace = resultOfSplittingByComma.map(trimAsFirstClassFunction);
+    var resultOfTrimmingWhitespace = _.invoke(resultOfSplittingByComma, 'trim');
     var santas = _.shuffle(resultOfTrimmingWhitespace);
     var giftRecipients = _.clone(santas);
     var rightmostElement = santas.pop();
@@ -33,7 +30,9 @@ app.controller('SecretSantaNameDrawingController', ['$scope', function($scope) {
     }
     var initialSecretSantaHash = {};
     initialSecretSantaHash[rightmostElement] = leftmostElement;
-    var secretSantaHash = _.reduce(resultOfZip, absorbTupleIntoHash, initialSecretSantaHash);
+    var secretSantaHash = _.reduce( resultOfZip,
+                                    absorbTupleIntoHash,
+                                    initialSecretSantaHash );
     return secretSantaHash;
   }
 */
