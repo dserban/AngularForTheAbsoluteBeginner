@@ -1,0 +1,75 @@
+<html ng-app="PersonalDevelopmentApp">
+<head>
+  <meta charset="UTF-8">
+  <title>PersonalDevelopment</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 30px 50px;
+    }
+    button {
+      font-size: 25px;
+      padding: 5px 15px;
+    }
+    div.buttoncontainer {
+      position: absolute;
+    }
+    div.buttoncontainer button {
+      font-size: 25px;
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px 15px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .progresscontainer td {
+      font-size: 25px;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .progresscontainer tr:nth-child(odd) td.bordertop {
+      background-color: #eeeeee;
+    }
+    .progresscontainer td.bordertop {
+      border-top: 1px solid #aaaaaa;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .fullwidth {
+      width: 100%;
+    }
+    td.autowidth {
+      width: auto;
+    }
+    td.textalignright {
+      text-align: right;
+    }
+    .displayinline {
+      display: inline;
+    }
+    .verticallycentered {
+      vertical-align: center;
+    }
+    .whiterthanusual {
+      opacity: 0.5;
+    }
+    input[type=text] {
+      font-size: 25px;
+      padding: 5px 10px;
+    }
+  </style>
+  <script src="js/underscore.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body ng-controller="PersonalDevelopmentAppController">
+  <div style="display: none;">
+    <img src="images/back.png">
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,135 @@
+<html ng-app="PersonalDevelopmentApp">
+<head>
+  <meta charset="UTF-8">
+  <title>PersonalDevelopment</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 30px 50px;
+    }
+    button {
+      font-size: 25px;
+      padding: 5px 15px;
+    }
+    div.buttoncontainer {
+      position: absolute;
+    }
+    div.buttoncontainer button {
+      font-size: 25px;
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px 15px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .progresscontainer td {
+      font-size: 25px;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .progresscontainer tr:nth-child(odd) td.bordertop {
+      background-color: #eeeeee;
+    }
+    .progresscontainer td.bordertop {
+      border-top: 1px solid #aaaaaa;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .fullwidth {
+      width: 100%;
+    }
+    td.autowidth {
+      width: auto;
+    }
+    td.textalignright {
+      text-align: right;
+    }
+    .displayinline {
+      display: inline;
+    }
+    .verticallycentered {
+      vertical-align: center;
+    }
+    .whiterthanusual {
+      opacity: 0.5;
+    }
+    input[type=text] {
+      font-size: 25px;
+      padding: 5px 10px;
+    }
+  </style>
+  <script src="js/underscore.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body ng-controller="PersonalDevelopmentAppController">
+  <div>
+    <table>
+      <tr>
+        <td>
+          <img src="images/back.png">
+        </td>
+        <td class="verticallycentered">
+          <h1 class="displayinline verticallycentered">&nbsp;&nbsp;Progress</h1>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table class="progresscontainer">
+      <tr>
+        <td class="autowidth bordertop">Drink at least 10 glasses of water</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Eat a healthy diet</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Spend at least 15 minutes learning a new skill</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Do your best to be punctual</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Brisk-walk or jog at least 30 minutes</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Brush your teeth twice</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Connect with family and friends</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Achieve Zero-Inbox</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Refrain from watching TV</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Drink no more than one beer</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+      <tr>
+        <td class="autowidth bordertop">Do something to declutter your life</td>
+        <td class="autowidth bordertop textalignright">100%</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="display: none;">
+    <img src="images/back.png">
+  </div>
+</body>
+</html>
+
